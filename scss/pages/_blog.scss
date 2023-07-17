@@ -1,0 +1,203 @@
+@use "../layout/header";
+@use "../layout/footer";
+@use "../base/colors";
+header {
+  .navbar {
+    .togl {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      left: 0;
+      right: 0;
+      top: 90px;
+      background-color: white;
+      padding: 50px;
+      border-radius: 8px;
+      .searchbar {
+        width: 300px;
+      }
+    }
+    #navbar {
+      display: none;
+      transition: 0.5s;
+    }
+  }
+}
+.navbar-open {
+  display: block; /* Navbar butona tıklandığında görünür */
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.menyu {
+  .nav-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .dark-btn {
+      text-align: start;
+      padding-left: 35px;
+    }
+  }
+}
+
+main {
+  .homes {
+    background-color: #6e6e6e;
+    .homes-content {
+      .p4 {
+        color: var(--text-white, #fff);
+
+        /* Paragraph/Semibold/Body - 16px */
+        font-family: Montserrat SemiBold;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+        padding-top: 16px;
+      }
+      .p5 {
+        color: var(--text-white, #fff);
+
+        /* Heading/Bold/H2 - 64px */
+        font-family: Rubik;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 88px; /* 137.5% */
+        padding-top: 64px;
+        padding-bottom: 120px;
+      }
+    }
+  }
+  .latest {
+    padding-top: 96px;
+    padding-bottom: 56px;
+    .latest-content {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .img {
+          width: 608px;
+          height: 517px;
+          background: #cccc;
+          overflow: hidden;
+          border-radius: 8px;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .card-text {
+          .p8 {
+            max-width: 552px;
+            color: var(--text-body, #808080);
+
+            /* Paragraph/Reguler/Body - 16px */
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px; /* 168.75% */
+            padding-top: 16px;
+            padding-bottom: 72px;
+          }
+          .p6 {
+            color: var(--text-tittle, #1c3554);
+
+            /* Heading/Bold/H4 - 32px */
+            font-family: Rubik;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px; /* 150% */
+            text-transform: capitalize;
+          }
+          .p7 {
+            color: var(--text-body, #808080);
+
+            /* Paragraph/Semibold/Caption - 14px */
+            font-family: Montserrat SemiBold;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            padding-top: 16px;
+            line-height: 24px; /* 171.429% */
+          }
+          .btn5 {
+            color: var(--text-white, #fff);
+
+            /* Paragraph/Semibold/Body - 16px */
+            font-family: Montserrat SemiBold;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 200% */
+            border-radius: 8px;
+            padding: 12px 32px;
+            border: none;
+            outline: none;
+            background-color: #f72585;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1210px) {
+  main {
+    .latest {
+      .latest-content {
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .p6,
+          .p7,
+          .p8,
+          .button {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 610px) {
+  main {
+    .latest {
+      .latest-content {
+        .card {
+          .img {
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  main {
+    .latest {
+      .latest-content {
+        .card {
+          .img {
+            width: 280px;
+          }
+          .card-text {
+            .p6 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

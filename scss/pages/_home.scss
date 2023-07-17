@@ -42,6 +42,17 @@ header {
 .navbar-shrink {
   padding: 1px;
 }
+.menyu {
+  .nav-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .dark-btn {
+      text-align: start;
+      padding-left: 35px;
+    }
+  }
+}
 main {
   margin-top: 102px;
   .home {

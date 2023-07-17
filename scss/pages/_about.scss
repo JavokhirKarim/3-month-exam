@@ -31,6 +31,17 @@ header {
   background-color: black;
   color: white;
 }
+.menyu {
+  .nav-btns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .dark-btn {
+      text-align: start;
+      padding-left: 35px;
+    }
+  }
+}
 main {
   .course {
     .course-content {
