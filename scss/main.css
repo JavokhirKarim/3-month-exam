@@ -236,6 +236,21 @@ header .navbar #navbar {
   padding-left: 35px;
 }
 
+.backtop {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: rgb(77, 77, 77);
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
 main {
   margin-top: 102px;
 }
@@ -1086,6 +1101,21 @@ header .navbar #navbar {
 .menyu .nav-btns .dark-btn {
   text-align: start;
   padding-left: 35px;
+}
+
+.backtop {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: rgb(77, 77, 77);
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
 }
 
 main {
@@ -2113,6 +2143,21 @@ header .navbar #navbar {
   padding-left: 35px;
 }
 
+.backtop {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: rgb(77, 77, 77);
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
 main .course .course-content .p4 {
   color: var(--text-tittle, #1c3554);
   /* Paragraph/Semibold/Body - 16px */
@@ -2663,6 +2708,21 @@ header .navbar #navbar {
   padding-left: 35px;
 }
 
+.backtop {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: rgb(77, 77, 77);
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
 main .homes {
   background-color: #6e6e6e;
 }
@@ -2824,6 +2884,21 @@ header .navbar #navbar {
 .menyu .nav-btns .dark-btn {
   text-align: start;
   padding-left: 35px;
+}
+
+.backtop {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  background-color: rgb(77, 77, 77);
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
 }
 
 main .prof .prof-content {

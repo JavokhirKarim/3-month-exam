@@ -53,6 +53,21 @@ header {
     }
   }
 }
+.backtop {
+  position: fixed;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+
+  z-index: 10;
+  background-color: rgb(77, 77, 77);
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
 main {
   margin-top: 102px;
   .home {
