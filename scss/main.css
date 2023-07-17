@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -25,8 +26,22 @@ header .logo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 0;
+}
+.navbar .hamburger {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+.navbar .sidebar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1120px;
+  padding-left: 15px;
+  justify-content: space-between;
 }
 .navbar .p1 {
   color: #1c3554;
@@ -171,6 +186,45 @@ footer .footer-content ul li:nth-child(1) {
 header {
   background-color: white;
 }
+header .navbar .togl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 0;
+  right: 0;
+  top: 90px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+}
+header .navbar .togl .searchbar {
+  width: 300px;
+}
+header .navbar #navbar {
+  display: none;
+  transition: 0.5s;
+}
+
+.navbar-open {
+  display: block; /* Navbar butona tıklandığında görünür */
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.navbar-shrink {
+  padding: 1px;
+}
 
 main {
   margin-top: 102px;
@@ -232,7 +286,7 @@ main .home .home-content .left-home .searchbar {
   align-items: center;
   justify-content: center;
   border: 1px solid #9e9e9e;
-  width: 610px;
+  max-width: 610px;
   justify-content: space-between;
   padding: 12px 16px;
   border-radius: 8px;
@@ -839,17 +893,20 @@ main .blog .blog-content .blog-cards .blog-card:hover {
   }
 }
 @media (max-width: 1140px) {
-  header .navbar .searchbar {
+  header .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .navbar .sidebar {
     display: none;
   }
-  header .navbar .selector {
-    display: none;
-  }
-  header .navbar .nav-btns {
-    display: none;
-  }
-  header .navbar .p1 {
-    display: none;
+  header .navbar .hamburger {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    display: block;
   }
   main .trend .trend-content .trend-cards {
     display: flex;
@@ -982,6 +1039,35 @@ main .blog .blog-content .blog-cards .blog-card:hover {
     max-width: 250px;
   }
 }
+header .navbar .togl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 0;
+  right: 0;
+  top: 90px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+}
+header .navbar .togl .searchbar {
+  width: 300px;
+}
+header .navbar #navbar {
+  display: none;
+  transition: 0.5s;
+}
+
+.navbar-open {
+  display: block; /* Navbar butona tıklandığında görünür */
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 main {
   margin-top: 100px;
 }
@@ -1968,6 +2054,35 @@ main .mentor .p31 {
     align-items: center;
   }
 }
+header .navbar .togl {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 0;
+  right: 0;
+  top: 90px;
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+}
+header .navbar .togl .searchbar {
+  width: 300px;
+}
+header .navbar #navbar {
+  display: none;
+  transition: 0.5s;
+}
+
+.navbar-open {
+  display: block; /* Navbar butona tıklandığında görünür */
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 main .course .course-content .p4 {
   color: var(--text-tittle, #1c3554);
   /* Paragraph/Semibold/Body - 16px */

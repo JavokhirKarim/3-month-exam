@@ -1,7 +1,36 @@
 @use "../layout/header";
 @use "../layout/footer";
 @use "../base/colors";
-
+header {
+  .navbar {
+    .togl {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      left: 0;
+      right: 0;
+      top: 90px;
+      background-color: white;
+      padding: 50px;
+      border-radius: 8px;
+      .searchbar {
+        width: 300px;
+      }
+    }
+    #navbar {
+      display: none;
+      transition: 0.5s;
+    }
+  }
+}
+.navbar-open {
+  display: block; /* Navbar butona tıklandığında görünür */
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 main {
   .course {
     .course-content {

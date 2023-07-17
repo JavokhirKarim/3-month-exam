@@ -16,9 +16,23 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding: 10px 0;
-
+  .hamburger {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    display: none;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1120px;
+    padding-left: 15px;
+    justify-content: space-between;
+  }
   .p1 {
     color: $color-darkblue;
     font-family: "Montserrat", sans-serif;
