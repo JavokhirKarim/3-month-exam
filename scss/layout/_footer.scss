@@ -1,0 +1,66 @@
+@use "../base/colors" as *;
+@use "../components" as *;
+
+footer {
+  background: $color-footer;
+  border-radius: 8px;
+  margin: 0 40px;
+  .footer-content {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .footer-left {
+      .p2 {
+        max-width: 500px;
+        padding-top: 36px;
+        padding-bottom: 139px;
+        color: var(--text-white, #fff);
+
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px; /* 168.75% */
+      }
+      .p3 {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        padding-bottom: 40px;
+        span {
+          padding-left: 40px;
+        }
+      }
+    }
+    ul {
+      li {
+        list-style: none;
+        a {
+          color: var(--text-white, #fff);
+          font-family: Montserrat SemiBold;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px; /* 200% */
+        }
+      }
+      li:nth-child(1) a {
+        color: var(--text-white, #fff);
+
+        /* Heading/Reguler/H5 - 24px */
+        font-family: "Rubik", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 133.333% */
+      }
+      li:nth-child(1) {
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
